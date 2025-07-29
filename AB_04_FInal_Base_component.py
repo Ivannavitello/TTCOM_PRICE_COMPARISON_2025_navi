@@ -319,6 +319,9 @@ while Item_Product < item_limit:
         # Needs fix ---
         print(f"Amount per item: {product}: ${amount_cost:.2f}")
 
+    if over_budget == "yes":
+        print(f"The cost of {product} exceeds your budget of ${budget}. But you decided to continue anyway.")
+
 
     # Safely append data
     every_item.append(product)
