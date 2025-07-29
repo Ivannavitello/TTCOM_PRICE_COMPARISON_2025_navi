@@ -216,6 +216,7 @@ EXIT_CODE = "exit"
 # this adds a limit and will track the number of items entered
 Item_Product = 0
 item_limit = 50
+print()
 print("IF YOU HAVE ITEMS THAT DO NOT HAVE UNITS PLEASE TYPE IT IN FIRST")
 print()
 while Item_Product < item_limit:
@@ -319,7 +320,7 @@ while Item_Product < item_limit:
         # Needs fix ---
         print(f"Amount per item: {product}: ${amount_cost:.2f}")
 
-    if over_budget == "yes":
+    if over_budget == "yes" and cost > budget:
         print(f"The cost of {product} exceeds your budget of ${budget}. But you decided to continue anyway.")
 
 
